@@ -1,0 +1,38 @@
+{
+  "seed": 42,
+  "headless": false,
+  "simulation": {
+    "fps": 30,
+    "sim_speed": 1.0,
+    "max_steps": 5000,
+    "day_length_steps": 600
+  },
+  "world": {
+    "width": 900,
+    "height": 600,
+    "food_count": 45,
+    "hazard_count": 16,
+    "food_radius": 5,
+    "hazard_radius": 14,
+    "boundary_damage": 0.5
+  },
+  "creature": {
+    "start_energy": 100.0,
+    "start_health": 100.0,
+    "max_speed": 2.8,
+    "rotation_speed": 0.18,
+    "sensor_range": 120,
+    "vision_fov": 1.5708,
+    "energy_decay": 0.07,
+    "rest_recovery": 0.18
+  },
+  "brain": {
+    "mode": "threshold",
+    "hidden_size": 12,
+    "learning_rate": 0.01
+  },
+  "logging": {
+    "run_name": "stage1_demo",
+    "save_every": 30
+  }
+}
